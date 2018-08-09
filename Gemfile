@@ -68,6 +68,14 @@ group :assets do
 end
 
 group :development do
+  gem "jquery"
+  gem "jquery-rails"
+  gem "peek"
+  gem "peek-mysql2"
+  gem "peek-pg"
+  gem "peek-gc"
+  gem "peek-performance_bar"
+  gem "peek-host"
   gem "annotate"
   gem "git-review", require: false
   gem "guard", require: false

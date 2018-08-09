@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   mount API::RootAPI => "/"
   mount GrapeSwaggerRails::Engine, at: "/documentation" unless Rails.env.production?
+  mount Peek::Railtie => '/peek' if Rails.env.development?
 
   # Error pages.
   %w[401 404 422 500].each do |code|
